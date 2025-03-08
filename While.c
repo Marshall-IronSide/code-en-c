@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 
 int main()
 {
@@ -61,7 +62,7 @@ int main()
     moyenne = (float)somme/10;
     printf("La moyenne est : %.2f\n",moyenne);*/
 
-    int count,i,nbreheures,tauxHoraire;
+    /*int count,i,nbreheures,tauxHoraire;
     float salairBrute,masseSalariale;
     count = 0;
     masseSalariale = 0;
@@ -83,7 +84,113 @@ int main()
         masseSalariale += salairBrute;
     }
     printf("La masse salariale est: %.2f \n",masseSalariale);
-    printf("%d personnes ont un salaire inferieur au SMIG\n",count);
+    printf("%d personnes ont un salaire inferieur au SMIG\n",count);*/
+
+
+    /*const int NbrAticles = 5;
+    float TPRIX[NbrAticles];
+    int TQTE[NbrAticles];
+    float valeurStock;
+
+
+        for (int i = 0; i < NbrAticles; i++) {
+            printf("Entrez le prix de l'article %d \n: ", i + 1);
+            scanf("%f", &TPRIX[i]);
+            printf("Entrez la quantite en stock de l'article %d \n:", i + 1);
+            scanf("%d", &TQTE[i]);
+        }
+
+    printf("______Valeur en stock des articles :______\n");
+        for (int i = 0; i < NbrAticles; i++) {
+            valeurStock = TPRIX[i] * TQTE[i];
+            printf("Article %d : %.2f F\n", i + 1, valeurStock);*
+        }*/
+/*const int NbrEtudiant = 2;
+const int matieres = 3;
+float moyenne [NbrEtudiant];
+int i,j;
+int notes[NbrEtudiant];
+    for( i = 0; i < NbrEtudiant;i++){
+        int somme = 0;
+        printf("Etudiant %d\n:",i+1);
+        for (j = 0; j < matieres; j++) {
+            printf("Saisissez la note  %d \n:",j+1);
+            scanf("%d",&notes[i]);
+            somme = somme+notes[i];
+                     }
+        moyenne[i] = somme/matieres;
+
+        }
+        for( i = 0; i < NbrEtudiant;i++){
+                printf("La moyenne de l'etudiant %d est: %.2f\n",i+1,moyenne[i]);*/
+/*const int EMPLOYES = 3;
+const int MOIS = 2;
+
+
+    float salaires[EMPLOYES][MOIS];
+    float somme[EMPLOYES];
+    float  sommeTotale = 0;
+    float sommeMois[MOIS] = {0};
+    int i, j;
+
+    for (i = 0; i < EMPLOYES; i++) {
+        somme[i] = 0;
+    }
+
+
+    for (i = 0; i < EMPLOYES; i++) {
+        printf("Entrez les salaires mensuels pour l'employe %d :\n", i + 1);
+        for (j = 0; j < MOIS; j++) {
+            printf("Mois %d : ", j + 1);
+            scanf("%f", &salaires[i][j]);
+       somme[i] += salaires[i][j];
+        }
+        sommeTotale += somme[i];
+    }
+
+    printf("\n La somme des salaire des employes:\n");
+    for (i = 0; i < EMPLOYES; i++) {
+        printf("\nEmploye %d :\n", i + 1);
+        printf("Somme des salaires de l'employe %d : %.2f\n", i + 1, somme[i]);
+
+        }
+    printf("\nSomme des salaires par mois :\n");
+    for (j = 0; j < MOIS; j++) {
+        printf("Mois %d : %.2f\n", j + 1, sommeMois[j]);
+    }*/
+
+/*    char Nom[20];
+    printf("Entrez votre nom\n");
+    scanf("%s",Nom);
+    printf("Votre nom est: %s ",Nom);*/
+
+char nom[20], nouveau[20] = {0},nouveau2[20] = {0};
+int longueurChaine = 0, valeur = 0;
+while (longueurChaine <= 5){
+printf("Saisiser le nom\n");
+scanf("%s",&nom);
+printf("Saisiser le prenom\n");
+scanf("%s",&nouveau);
+valeur = strcmp (nom,nouveau);
+//strcat(nom,nouveau);
+//strcpy(nouveau, nom);
+
+longueurChaine = strlen(nom);
+if (longueurChaine <= 5){
+    printf("Nom trop court\n");
+}
+}
+
+//printf("le premier nom est : %s\n", nom);
+//printf("le deuxieme nom est : %s\n", nouveau);
+//printf("la fusion des deux noms est : %s\n",nom);
+//printf("La chaine %s fait %d caracteres de long",nom , longueurChaine);
+if(valeur == 0){
+    printf("Les deux chaines sont egales\n");
+}
+else{
+     printf("Les deux chaines sont differents\n",nom,nouveau);
+}
 
 
     return 0;
