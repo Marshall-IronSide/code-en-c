@@ -1,7 +1,7 @@
 #include<stdio.h>
 #include<stdlib.h>
 
-void affichelnt(){
+void afficher(){
     int i;
     printf ( "Les annes bixestiles de 1900 a 3000:\n");
 
@@ -14,7 +14,7 @@ void affichelnt(){
 }
 
 int main(){
-    affichelnt ();
+    afficher ();
 return 0;
 }
 
