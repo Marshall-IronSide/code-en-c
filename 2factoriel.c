@@ -12,7 +12,7 @@ int factoriel(int a){
 int main(){
 int a,b,c,comb;
 while(a<b){
-printf("Rentrez successivement deux entier a et b\n");
+printf("Rentrez successivement deux entier a et b a>b\n");
 scanf("%i %i",&a,&b);
 if( a< b){
     printf("a ne peut pas etre inferieur a b\n");
